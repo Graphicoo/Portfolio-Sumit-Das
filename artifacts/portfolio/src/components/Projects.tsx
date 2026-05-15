@@ -23,6 +23,22 @@ const WORKS = [
   { id: 18, image: "/images/work-18.jpg" },
   { id: 19, image: "/images/work-19.jpg" },
   { id: 20, image: "/images/work-20.jpg" },
+  { id: 21, image: "/images/work-21.jpg" },
+  { id: 22, image: "/images/work-22.jpg" },
+  { id: 23, image: "/images/work-23.jpg" },
+  { id: 24, image: "/images/work-24.jpg" },
+  { id: 25, image: "/images/work-25.jpg" },
+  { id: 26, image: "/images/work-26.jpg" },
+  { id: 27, image: "/images/work-27.jpg" },
+  { id: 28, image: "/images/work-28.jpg" },
+  { id: 29, image: "/images/work-29.jpg" },
+  { id: 30, image: "/images/work-30.jpg" },
+  { id: 31, image: "/images/work-31.jpg" },
+  { id: 32, image: "/images/work-32.jpg" },
+  { id: 33, image: "/images/work-33.jpg" },
+  { id: 34, image: "/images/work-34.jpg" },
+  { id: 35, image: "/images/work-35.jpg" },
+  { id: 36, image: "/images/work-36.jpg" },
 ];
 
 export function Projects() {
