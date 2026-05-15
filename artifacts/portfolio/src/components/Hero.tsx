@@ -1,0 +1,111 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+
+export function Hero() {
+  const { scrollY } = useScroll();
+  const y1 = useTransform(scrollY, [0, 1000], [0, 200]);
+  const y2 = useTransform(scrollY, [0, 1000], [0, -100]);
+  const opacity = useTransform(scrollY, [0, 500], [1, 0]);
+
+  return (
+    <section id="top" className="relative min-h-[100dvh] flex items-center overflow-hidden pt-20">
+      {/* Abstract Background Elements */}
+      <div className="absolute inset-0 pointer-events-none opacity-20 dark:opacity-40">
+        <div className="absolute top-1/4 -right-1/4 w-[800px] h-[800px] rounded-full bg-primary/20 blur-[120px] mix-blend-screen" />
+        <div className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] rounded-full bg-blue-500/10 blur-[100px] mix-blend-screen" />
+      </div>
+
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <motion.div 
+            className="lg:col-span-7 flex flex-col items-start"
+            style={{ y: y1, opacity }}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="inline-block px-3 py-1 mb-6 border border-primary/30 rounded-full text-primary font-mono text-xs uppercase tracking-widest"
+            >
+              Elias Vance — Creative Developer
+            </motion.div>
+            
+            <motion.h1 
+              className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[1.1] tracking-tight text-foreground mb-6"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              Building digital <br/>
+              experiences with <br/>
+              <span className="text-primary italic">intention.</span>
+            </motion.h1>
+
+            <motion.p 
+              className="text-lg md:text-xl text-muted-foreground max-w-xl font-light leading-relaxed mb-10"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              I bridge the gap between rigorous engineering and visionary design, 
+              crafting interfaces that feel alive, responsive, and unforgettable.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              <a 
+                href="#projects" 
+                className="group flex items-center gap-4 text-sm font-mono uppercase tracking-widest text-foreground hover:text-primary transition-colors"
+              >
+                <span className="w-12 h-[1px] bg-border group-hover:bg-primary group-hover:w-16 transition-all duration-300"></span>
+                View Selected Works
+                <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform duration-300" />
+              </a>
+            </motion.div>
+          </motion.div>
+
+          <motion.div 
+            className="lg:col-span-5 relative hidden lg:block"
+            style={{ y: y2 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <div className="relative w-full aspect-[3/4] max-w-md mx-auto">
+              <div className="absolute inset-0 border border-border translate-x-4 translate-y-4"></div>
+              <img 
+                src="/images/avatar.png" 
+                alt="Abstract Portrait" 
+                className="absolute inset-0 w-full h-full object-cover grayscale-[20%] contrast-125 mix-blend-luminosity dark:mix-blend-normal"
+              />
+              {/* Decorative framing */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 border-t border-l border-primary"></div>
+              <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b border-r border-primary"></div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+      
+      {/* Scroll Indicator */}
+      <motion.div 
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        style={{ opacity }}
+      >
+        <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground rotate-90 mb-8">Scroll</span>
+        <div className="w-[1px] h-16 bg-border relative overflow-hidden">
+          <motion.div 
+            className="absolute top-0 left-0 w-full h-1/2 bg-primary"
+            animate={{ top: ["-50%", "100%"] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
+          />
+        </div>
+      </motion.div>
+    </section>
+  );
+}
