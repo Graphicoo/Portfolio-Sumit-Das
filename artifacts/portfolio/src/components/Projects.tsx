@@ -5,35 +5,35 @@ import { ArrowUpRight } from "lucide-react";
 const PROJECTS = [
   {
     id: 1,
-    title: "Aura Fluid Dynamics",
-    category: "WebGL & Creative Coding",
-    description: "An interactive browser-based fluid simulation built for a high-end audio hardware manufacturer. Using custom GLSL shaders and Three.js to visualize sound waves in real-time.",
+    title: "Horizon Brand Identity",
+    category: "Brand Identity & Logo Design",
+    description: "A complete visual identity for a sustainable lifestyle brand — from logo mark and wordmark to brand guidelines, colour palette, and packaging. Crafted in Illustrator with AI-assisted mood boarding.",
     image: "/images/project-1.png",
-    year: "2023"
+    year: "2024"
   },
   {
     id: 2,
-    title: "Obscura E-Commerce",
-    category: "Full-Stack Development & UI",
-    description: "A brutalist, dark-mode-only shopping experience for an avant-garde fashion label. Built with Next.js, featuring bespoke page transitions and an unapologetic typographic hierarchy.",
+    title: "Neon Pulse Poster Series",
+    category: "Digital Illustration",
+    description: "A series of five limited-edition event posters for an underground music collective. Bold typography meets rich, layered illustration work — produced entirely in Photoshop.",
     image: "/images/project-2.png",
     year: "2024"
   },
   {
     id: 3,
-    title: "Synapse Analytics",
-    category: "Data Visualization",
-    description: "A massive 3D data visualization dashboard for a fintech startup. Renders tens of thousands of data points smoothly in the browser using instanced meshes and WebWorkers.",
+    title: "Verdant Packaging",
+    category: "Print & Packaging Design",
+    description: "Packaging design for an artisan tea company's premium line. Every element — from die-cut shapes to hand-drawn botanical illustrations — was designed to feel as good to hold as it does to look at.",
     image: "/images/project-3.png",
     year: "2023"
   },
   {
     id: 4,
-    title: "Vesper Generative Art",
-    category: "Digital Installation",
-    description: "A generative art piece that creates unique particle systems based on local weather data. Originally an installation, adapted into a progressive web app.",
+    title: "AI-Augmented Editorial",
+    category: "AI-Assisted Visual Design",
+    description: "An editorial spread exploring how ChatGPT and generative AI tools can complement traditional graphic design workflows. Concept, direction, and final compositing by hand in Photoshop.",
     image: "/images/project-4.png",
-    year: "2022"
+    year: "2023"
   }
 ];
 

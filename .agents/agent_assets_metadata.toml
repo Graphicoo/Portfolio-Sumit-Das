@@ -11,22 +11,22 @@ title = "Moody stylized portrait of developer"
 id = "VVTEWqm6mHcCcf2_lAt6N"
 uri = "file://artifacts/portfolio/public/images/project-1.png"
 type = "image"
-title = "WebGL fluid geometry abstract art"
+title = "generated_image"
 
 [[generated]]
 id = "UnM7t4dlpVw4C_CpXqHrU"
 uri = "file://artifacts/portfolio/public/images/project-2.png"
 type = "image"
-title = "Dark mode brutalist UI design"
+title = "generated_image"
 
 [[generated]]
 id = "-U98Dxd2qVncX2ywg1WOI"
 uri = "file://artifacts/portfolio/public/images/project-3.png"
 type = "image"
-title = "3D data visualization glowing nodes"
+title = "generated_image"
 
 [[generated]]
 id = "Ip3sFZFXpkedWvRrRgRLx"
 uri = "file://artifacts/portfolio/public/images/project-4.png"
 type = "image"
-title = "Generative art particle system"
+title = "generated_image"

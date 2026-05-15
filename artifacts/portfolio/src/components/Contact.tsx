@@ -29,7 +29,7 @@ export function Contact() {
           </p>
           
           <a 
-            href="mailto:hello@example.com" 
+            href="mailto:sumit.das@example.com" 
             className="group relative inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground text-sm font-mono uppercase tracking-widest overflow-hidden transition-transform hover:scale-105 active:scale-95"
           >
             <span className="relative z-10 flex items-center gap-3">

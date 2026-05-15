@@ -26,22 +26,22 @@ export function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <p className="text-xl md:text-2xl font-light text-foreground leading-relaxed">
-              I believe that the best software feels inevitable. It doesn't just solve a problem; it provides an experience that respects the user's time and intelligence.
+              I believe great design is the difference between being seen and being remembered. Every pixel, every curve, every colour choice is a decision — and I make each one count.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              For the past 8 years, I've operated at the intersection of systems architecture and interaction design. I started my journey writing low-level graphics code before transitioning to the web. That background instilled a deep appreciation for performance and rendering optimization that I now bring to modern JavaScript applications.
+              I'm Sumit Das, a graphic designer with a passion for building visual identities that feel authentic and enduring. My work lives at the intersection of bold concept and precise execution — from brand logos and print collateral to digital illustrations and AI-assisted visuals.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Based in a quiet studio in the Pacific Northwest, I partner with ambitious startups and visionary founders to build products that stand out not through gimmicks, but through obsessive attention to detail, flawless typography, and frictionless motion.
+              I bring together the power of industry-standard tools — Photoshop, Illustrator, and modern AI — to deliver work that doesn't just look good, but communicates clearly and leaves a lasting impression.
             </p>
 
             <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
               {[
-                { label: "Experience", value: "8+ Years" },
-                { label: "Location", value: "Seattle, WA" },
-                { label: "Focus", value: "UI/UX & WebGL" },
+                { label: "Specialty", value: "Brand & Visual" },
+                { label: "Tools", value: "PS · AI · GPT" },
+                { label: "Focus", value: "Graphic Design" },
                 { label: "Status", value: "Available" }
               ].map((stat, i) => (
                 <div key={i} className="flex flex-col gap-2">

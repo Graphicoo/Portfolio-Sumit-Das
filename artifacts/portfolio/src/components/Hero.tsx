@@ -27,7 +27,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="inline-block px-3 py-1 mb-6 border border-primary/30 rounded-full text-primary font-mono text-xs uppercase tracking-widest"
             >
-              Elias Vance — Creative Developer
+              Sumit Das — Graphic Designer
             </motion.div>
             
             <motion.h1 
@@ -36,9 +36,9 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Building digital <br/>
-              experiences with <br/>
-              <span className="text-primary italic">intention.</span>
+              Crafting visuals <br/>
+              that speak <br/>
+              <span className="text-primary italic">louder.</span>
             </motion.h1>
 
             <motion.p 
@@ -47,8 +47,8 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              I bridge the gap between rigorous engineering and visionary design, 
-              crafting interfaces that feel alive, responsive, and unforgettable.
+              I design brand identities, illustrations, and visual systems that cut through
+              noise — blending sharp instincts with tools like Photoshop, Illustrator, and AI.
             </motion.p>
 
             <motion.div

@@ -3,16 +3,16 @@ import { ArrowUpRight } from "lucide-react";
 
 const EXPERTISE = [
   {
-    category: "Engineering",
-    skills: ["React / Next.js", "TypeScript", "WebGL / Three.js", "Node.js", "Framer Motion", "GLSL Shaders"]
+    category: "Design Tools",
+    skills: ["Adobe Photoshop", "Adobe Illustrator", "ChatGPT / AI", "Typography", "Colour Theory", "Layout & Composition"]
   },
   {
-    category: "Design",
-    skills: ["Interaction Design", "Typography Systems", "Design Systems", "Figma", "Prototyping", "Art Direction"]
+    category: "Specialties",
+    skills: ["Brand Identity", "Logo Design", "Print Design", "Digital Illustration", "Social Media Graphics", "Packaging Design"]
   },
   {
-    category: "Architecture",
-    skills: ["Performance Optimization", "State Management", "API Design", "Serverless", "CI/CD", "Accessibility"]
+    category: "Process",
+    skills: ["Concept Development", "Mood Boarding", "Client Collaboration", "Revisions & Feedback", "Final Delivery", "Brand Guidelines"]
   }
 ];
 

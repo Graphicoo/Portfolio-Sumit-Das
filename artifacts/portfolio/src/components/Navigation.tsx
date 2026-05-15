@@ -65,7 +65,7 @@ export function Navigation() {
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="#top" className="text-xl font-serif font-bold tracking-tight text-foreground flex items-center gap-2 group">
           <span className="w-2 h-2 rounded-full bg-primary inline-block group-hover:scale-150 transition-transform"></span>
-          ELIAS V.
+          SUMIT D.
         </a>
 
         {/* Desktop Nav */}
