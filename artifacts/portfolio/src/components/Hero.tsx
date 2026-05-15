@@ -78,8 +78,8 @@ export function Hero() {
               <div className="absolute inset-0 border border-border translate-x-4 translate-y-4"></div>
               <img 
                 src="/images/avatar.png" 
-                alt="Abstract Portrait" 
-                className="absolute inset-0 w-full h-full object-cover grayscale-[20%] contrast-125 mix-blend-luminosity dark:mix-blend-normal"
+                alt="Sumit Das" 
+                className="absolute inset-0 w-full h-full object-cover object-top"
               />
               {/* Decorative framing */}
               <div className="absolute -top-4 -left-4 w-8 h-8 border-t border-l border-primary"></div>
