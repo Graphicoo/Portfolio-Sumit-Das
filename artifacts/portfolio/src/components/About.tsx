@@ -13,7 +13,7 @@ export function About() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-4">
-              The <br/><span className="italic text-muted-foreground">Ethos</span>
+              About <br/><span className="italic text-muted-foreground">Me</span>
             </h2>
             <div className="w-12 h-[1px] bg-primary mb-8"></div>
           </motion.div>
