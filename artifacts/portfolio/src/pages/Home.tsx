@@ -1,7 +1,7 @@
 import { Navigation } from "../components/Navigation";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
-import { Expertise } from "../components/Expertise";
+import { Skills } from "../components/Skills";
 import { Projects } from "../components/Projects";
 import { Services } from "../components/Services";
 import { Contact } from "../components/Contact";
@@ -14,7 +14,7 @@ function Home() {
       <main>
         <Hero />
         <About />
-        <Expertise />
+        <Skills />
         <Projects />
         <Services />
         <Contact />
