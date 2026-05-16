@@ -16,7 +16,25 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          {/* Avatar — mobile only (shows above text) */}
+          <motion.div
+            className="flex lg:hidden justify-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <div className="relative w-40 h-40 sm:w-52 sm:h-52 rounded-full overflow-hidden border-2 border-primary/40">
+              <img
+                src="/images/avatar.png"
+                alt="Sumit Das"
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute inset-0 rounded-full ring-2 ring-primary/20 ring-offset-2 ring-offset-background" />
+            </div>
+          </motion.div>
+
           <motion.div 
             className="lg:col-span-7 flex flex-col items-start"
             style={{ y: y1, opacity }}
