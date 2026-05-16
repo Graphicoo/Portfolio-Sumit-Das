@@ -65,8 +65,8 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              I design brand identities, illustrations, and visual systems that cut through
-              noise — blending sharp instincts with tools like Photoshop, Illustrator, and AI.
+              I design Brand Identity, Social Media Creatives &amp; Movie Promotions —
+              blending sharp instincts with tools like Photoshop, Illustrator, and AI.
             </motion.p>
 
             <motion.div
