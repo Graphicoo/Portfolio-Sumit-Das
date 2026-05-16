@@ -79,6 +79,33 @@ export function Skills() {
                 ))}
               </div>
             </motion.div>
+
+            {/* AI Tools */}
+            <motion.div
+              className={card}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+            >
+              <h3 className="text-xl font-serif font-semibold text-primary">AI Tools</h3>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { label: "ChatGPT", bg: "bg-[#10A37F]", letter: "GP" },
+                  { label: "Gemini", bg: "bg-gradient-to-br from-[#4285F4] to-[#8B5CF6]", letter: "Gm" },
+                  { label: "Midjourney", bg: "bg-[#000000]", letter: "Mj" },
+                  { label: "Adobe Firefly", bg: "bg-[#FF0000]", letter: "Ff" },
+                ].map((ai) => (
+                  <div key={ai.label} className="flex items-center gap-2">
+                    <span className={`w-7 h-7 rounded-md ${ai.bg} text-white text-xs font-bold flex items-center justify-center flex-shrink-0`}>
+                      {ai.letter}
+                    </span>
+                    <span className="text-sm text-muted-foreground">{ai.label}</span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
           </div>
 
           {/* ── Column 2 ── */}
