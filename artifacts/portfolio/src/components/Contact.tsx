@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail, MessageCircle } from "lucide-react";
+import { SiBehance, SiInstagram } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export function Contact() {
+  const socials = [
+    { Icon: SiBehance,    label: "Behance",   href: "https://www.behance.net/SumitDsigner" },
+    { Icon: SiInstagram,  label: "Instagram", href: "https://www.instagram.com/sumiit_thiside/" },
+    { Icon: FaLinkedinIn, label: "LinkedIn",  href: "https://www.linkedin.com/in/sumit-das-b5677319b/" },
+  ];
+
   return (
     <section id="contact" className="py-32 relative min-h-[80vh] flex items-center justify-center">
       {/* Background glow */}
@@ -24,19 +32,48 @@ export function Contact() {
             <span className="italic text-primary">remarkable.</span>
           </h2>
           
-          <p className="text-xl text-muted-foreground font-light max-w-2xl mb-12">
-            Whether you have a fully formed idea or just a concept, I'm always open to discussing new projects, technical challenges, and creative collaborations.
+          <p className="text-xl text-muted-foreground font-light max-w-2xl mb-10">
+            Whether you have a fully formed idea or just a concept, I'm always open to discussing new projects and creative collaborations.
           </p>
-          
-          <a 
-            href="mailto:sumit.das@example.com" 
-            className="group relative inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground text-sm font-mono uppercase tracking-widest overflow-hidden transition-transform hover:scale-105 active:scale-95"
-          >
-            <span className="relative z-10 flex items-center gap-3">
-              Start a Conversation <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </span>
-            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
-          </a>
+
+          {/* CTA buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-14">
+            <a
+              href="mailto:dassumit334@gmail.com"
+              className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-primary-foreground text-sm font-mono uppercase tracking-widest overflow-hidden transition-transform hover:scale-105 active:scale-95"
+            >
+              <Mail size={15} />
+              <span>dassumit334@gmail.com</span>
+              <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
+              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+            </a>
+
+            <a
+              href="https://wa.me/917044666058"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-3 px-8 py-4 border border-border text-sm font-mono uppercase tracking-widest text-foreground hover:border-primary hover:text-primary transition-colors"
+            >
+              <MessageCircle size={15} />
+              WhatsApp
+            </a>
+          </div>
+
+          {/* Social links */}
+          <div className="flex items-center gap-6">
+            {socials.map(({ Icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:border-primary hover:text-primary transition-colors"
+              >
+                <Icon size={16} />
+              </a>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

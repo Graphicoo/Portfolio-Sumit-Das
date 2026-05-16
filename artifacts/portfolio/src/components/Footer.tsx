@@ -1,9 +1,8 @@
 export function Footer() {
   const socials = [
-    { name: "Behance", href: "https://behance.net" },
-    { name: "Dribbble", href: "https://dribbble.com" },
-    { name: "Instagram", href: "https://instagram.com" },
-    { name: "LinkedIn", href: "https://linkedin.com" },
+    { name: "Behance", href: "https://www.behance.net/SumitDsigner" },
+    { name: "Instagram", href: "https://www.instagram.com/sumiit_thiside/" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/sumit-das-b5677319b/" },
   ];
 
   return (
